@@ -14,11 +14,10 @@ import datetime
 
 # User greetings according to time
 def greet_user():
-    greetings = ["Hi there! How can I be of service today?",
-                 "Good morning! ☀️ What are you looking to explore today?",
-                 "Good afternoon! What can I help you with this sunny afternoon?",
-                 "Good evening! ✨ Let's make the most of the rest of your night."]
-    # Choose a greeting based on the time of day (optional)
+    greetings = ["Hi there!",
+                 "Good morning!",
+                 "Good afternoon!",
+                 "Good evening!"]
     current_hour = int(datetime.datetime.now().hour)
     if 5 <= current_hour < 12:
         greeting = greetings[1]
